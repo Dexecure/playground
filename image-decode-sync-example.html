@@ -19,7 +19,7 @@
           img.width = 1400;
           // try to force browser to decode asynchronously
           img.decoding = "sync";
-          img.src = `https://res.cloudinary.com/demo/image/upload/f_auto,w_6400/q_1/string_1.jpg?${Date.now()}`;
+          img.src = `https://beek.dexecure.net/proxy/https://playground.dexecure.com/string_1.jpg?resize=none&${Date.now()}`;
           img.onload = () => {
             const orig = document.getElementById("orig");
             orig.parentElement.replaceChild(img, orig);
@@ -32,7 +32,7 @@
       id="orig"
       width="1400"
       onload="onloadImg()"
-      src="https://res.cloudinary.com/demo/image/upload/e_blur:1000,w_6400/q_1/string_1.jpg"
+      src="https://beek.dexecure.net/proxy/https://playground.dexecure.com/string_1.jpg?resize=none&format=lqip"
     />
     <br />
   </body>
