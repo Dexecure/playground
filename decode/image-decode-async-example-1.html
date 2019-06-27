@@ -19,7 +19,7 @@
           img.width = 1400;
           // try to force browser to decode asynchronously
           img.decoding = "async";
-          img.src = `https://beek.dexecure.net/proxy/https://playground.dexecure.com/string_1.jpg?resize=none&${Date.now()}`;
+          img.src = `https://beek.dexecure.net/proxy/https://playground.dexecure.com/decode/string_1.jpg?resize=none&${Date.now()}`;
           img.onload = () => {
             const orig = document.getElementById("orig");
             orig.parentElement.replaceChild(img, orig);
@@ -32,7 +32,7 @@
       id="orig"
       width="1400"
       onload="onloadImg()"
-      src="https://beek.dexecure.net/proxy/https://playground.dexecure.com/string_1.jpg?resize=none&format=lqip"
+      src="https://beek.dexecure.net/proxy/https://playground.dexecure.com/decode/string_1.jpg?resize=none&format=lqip"
     />
     <br />
   </body>
